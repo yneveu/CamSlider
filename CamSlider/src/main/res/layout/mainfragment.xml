@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_width="fill_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/demoTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignParentTop="true"
+        android:text="CamSlider"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_below="@+id/demoTitle"
+        android:background="#eeeeee" />
+</LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/buttonSpeedMinus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:text="Speed -"
+            />
+
+        <EditText
+            android:id="@+id/speedEditText"
+            android:inputType="numberSigned"
+            android:layout_height="fill_parent"
+            android:layout_width="192dp"
+            android:text="60" />
+
+        <Button
+            android:id="@+id/buttonSpeedPlus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:text="Speed +" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/StepsGridLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3" >
+
+
+        <Button
+            android:id="@+id/buttonStepsMinus"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="Step -"
+            android:layout_weight="0.12" />
+
+        <EditText
+            android:id="@+id/stepEditText"
+            android:layout_width="213dp"
+            android:layout_height="fill_parent"
+            android:inputType="numberSigned"
+            android:layout_weight="1.17"
+            android:text="1">
+        </EditText>
+
+        <Button
+            android:id="@+id/buttonStepsPlus"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="Step+" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/delayLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3" >
+
+
+        <Button
+            android:id="@+id/buttonDelayMinus"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="Delay -"
+            android:layout_weight="0.12" />
+
+        <EditText
+            android:id="@+id/delayEditText"
+            android:layout_width="213dp"
+            android:layout_height="fill_parent"
+            android:inputType="numberSigned"
+            android:layout_weight="1.17"
+            android:text="1000">
+        </EditText>
+
+        <Button
+            android:id="@+id/buttonDelayPlus"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="Delay+" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/sendConfigButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Send Config" />
+
+        <Button
+            android:id="@+id/buttonPauseResume"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:text="Pause/Resume"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="Left"
+            android:id="@+id/leftButton" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="Right"
+            android:id="@+id/rightButton" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="298dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Read"
+        android:id="@+id/readSpeed"
+        android:layout_column="0" />
+
+</LinearLayout>

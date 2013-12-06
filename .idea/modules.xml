@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CamSlider/CamSlider.iml" filepath="$PROJECT_DIR$/CamSlider/CamSlider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CamSliderProject.iml" filepath="$PROJECT_DIR$/CamSliderProject.iml" />
+    </modules>
+  </component>
+</project>
+
